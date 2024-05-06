@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+    </script>
+    <link rel="stylesheet" href="register.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- navbar start -->
+    <!-- <nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg></a>
+            </li>
+            <li><a href="#"> Home </a></li>
+
+            <li><a href="#"> Account </a>
+                <ul class="drop">
+                    <li><a href="#"> Login </a></li>
+                    <li><a href="#"> Register </a></li>
+                </ul>
+            </li> -->
+<!-- 
+            <li><a href="#"> Help </a>
+                <ul class="drop">
+                    <li><a href="#"> Contact us </a></li>
+                    <li><a href="#"> About us </a></li>
+                    <li><a href="#"> FQA </a></li>
+                </ul>
+            </li> -->
+        <!-- </ul>
+        <ul class="menu">
+            <li class="hideOnMobile"><a href="#"> AB</a></li>
+            <li class="hideOnMobile"><a href="#"> Home </a></li>
+
+            <li class="hideOnMobile" id="account_button"><a href="#"> Account</a>
+                <ul class="drop" style="display: none;" id="account_entities">
+                    <li><a href="#"> Login </a></li>
+                    <li><a href="#"> Register </a></li>
+
+                </ul>
+            </li> -->
+<!-- 
+            <li class="hideOnMobile" id="help_button"><a href="#"> Help </a>
+                <ul class="drop" style="display:none;" id="help_entities">
+                    <li><a href="#"> Contact us </a></li>
+                    <li><a href="#"> About us </a></li>
+                    <li><a href="#"> FQA </a></li>
+
+                </ul>
+            </li> -->
+            <!-- <ul class="menu-icon">
+                <li onclick="showSidebar()">
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></a>
+                </li>
+            </ul>
+
+        </ul>
+
+    </nav> -->
+    <!-- navbar ends -->
+
+    <!-- register section -->
+    <div class="signup">
+        <h1>Register</h1>
+        <P></P>
+        <h4>It's free and only takes a minute..</h4>
+        <form>
+            <label for="">First Name</label>
+            <input type="text" placeholder="">
+            <label for=""> Last Name</label>
+            <input type="text" placeholder="">
+            <label for=""> Email</label>
+            <input type="email" placeholder="">
+            <label for=""> Password</label>
+            <input type="password" placeholder="">
+            <label for="">Confirm Password</label>
+            <input type="password" placeholder="">
+            <input type="button" value="submit">
+        </form>
+        <p>By clicking the sign up button, you agree to our <br>
+            <a href="">Terms and condition</a> and <a href="">Policy and Privacy</a><br>
+        </p>
+    </div>
+    <p class="para-2">Already have an account? <a href="#">Login here</a></p>
+
+
+    <!-- footer starts-->
+    <!-- <footer>
+        <div class="row">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="#">Team Members</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get help</h4>
+                <ul>
+                    <li><a href="#"> Contact us </a></li>
+                    <li><a href="#"> About us </a></li>
+                    <li><a href="#"> FQA </a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>All listing</h4>
+                <ul>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><span></span><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><span></span><i class="fab fa-twitter"></i></a>
+                    <a href="#"><span></span><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><span></span><i class="fab fa-instagram"></i></a>
+
+                </div>
+            </div>
+
+        </div>
+    </footer> -->
+    <!-- footer ends -->
+
+</body>
+
+<script>
+    //show sidebar function
+    function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+    }
+
+    //hide sidebar function
+    function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+    }
+
+    //toggle account list
+    $(document).ready(function () {
+        $("#account_button").click(function () {
+            $("#account_entities").toggle(1000);
+            $("#help_entities").hide();
+        })
+    });
+
+    //toggle help list
+    $(document).ready(function () {
+        $("#help_button").click(function () {
+            $("#help_entities").toggle(1000);
+            $("#account_entities").hide();
+        })
+    });
+
+
+</script>
+
+</html>
